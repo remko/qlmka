@@ -1,0 +1,7 @@
+.DS_Store
+MKA.qlgenerator/Contents/MacOS/
+*.qlgenerator
+*.a
+*.zip
+test/*.mka
+internal.h

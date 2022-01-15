@@ -1,0 +1,26 @@
+{
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/*.o": true,
+    "**/*.a": true,
+    "**.qlgenerator": true,
+    "internal.h": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.formatOnSave": true
+  },
+  "[objective-c]": {
+    "editor.formatOnSave": true
+  },
+  "[c]": {
+    "editor.formatOnSave": true
+  }
+}
