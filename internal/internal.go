@@ -7,30 +7,20 @@ import (
 	"github.com/remko/go-mkvparse"
 )
 
-/*
-#include <memory.h>
-*/
 import "C"
 
 //export GetMKAThumb
-func GetMKAThumb(rawPath *C.char, maxWidth C.float, maxHeight C.float, outData unsafe.Pointer, outLen unsafe.Pointer) C.int {
-	path := C.GoString(rawPath)
+func GetMKAThumb(cpath *C.char, maxWidth C.float, maxHeight C.float) (code C.int, outData unsafe.Pointer, outLen C.long) {
+	path := C.GoString(cpath)
 	data, _, err := mkvparse.ParseCover(path)
 	if err != nil {
 		log.Printf("error reading thumb: %v", err)
-		*(*C.int)(outLen) = 0
-		*(**C.char)(outData) = nil
-		return -1
+		return -1, nil, 0
 	}
 	if data == nil {
-		*(*C.int)(outLen) = 0
-		*(**C.char)(outData) = nil
-		return 0
+		return 0, nil, 0
 	}
-	*(*C.int)(outLen) = (C.int)(len(data))
-	*(**C.char)(outData) = (*C.char)(C.malloc(C.ulong(len(data))))
-	C.memcpy(unsafe.Pointer(*(**C.char)(outData)), unsafe.Pointer(&data[0]), C.ulong(len(data)))
-	return 0
+	return 0, C.CBytes(data), C.long(len(data))
 }
 
 func main() {}
