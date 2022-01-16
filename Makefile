@@ -19,7 +19,11 @@ install: MKA.qlgenerator
 
 .PHONY: package
 package: MKA.qlgenerator
-	zip -r $<$(ZIP_SUFFIX).zip $< 
+	zip -r $<.zip $< 
+
+.PHONY: upload-release-binary
+upload-release-binary:
+	curl --fail-with-body -X POST -H "Authorization: token $(GITHUB_TOKEN)" -H "Content-Type: application/zip" --data-binary "@MKA.qlgenerator.zip" "https://uploads.github.com/repos/$(GITHUB_REPOSITORY)/releases/$(GITHUB_RELEASE_ID)/assets?name=$(BINARY_NAME)&label=$(BINARY_NAME)%20($(BINARY_LABEL))"
 
 .PHONY: clean
 clean:
