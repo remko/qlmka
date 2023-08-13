@@ -3,14 +3,6 @@ github.com/BurntSushi/freetype-go v0.0.0-20160129220410-b763ddbfe298/go.mod h1:D
 github.com/BurntSushi/graphics-go v0.0.0-20160129215708-b43f31a4a966/go.mod h1:Mid70uvE93zn9wgF92A/r5ixgnvX8Lh68fxp9KQBaI0=
 github.com/BurntSushi/xgb v0.0.0-20210121224620-deaf085860bc/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/BurntSushi/xgbutil v0.0.0-20190907113008-ad855c713046/go.mod h1:uw9h2sd4WWHOPdJ13MQpwK5qYWKYDumDqxWWIknEQ+k=
-github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
-github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
-github.com/remko/go-mkvparse v0.5.0 h1:8ChC4Ud+L7MrCi1Gr+rQobvDlM+SchXUleB++ejMOAk=
-github.com/remko/go-mkvparse v0.5.0/go.mod h1:tLjjuNXiQ4WLRBjU/ZUuyUweUO1s/sg7FtVX+yf1F0c=
-github.com/remko/go-mkvparse v0.7.0 h1:vFXrsdfHua/+VSR5OVEpaQcRJOBSL0JCItZSl3/bdAQ=
-github.com/remko/go-mkvparse v0.7.0/go.mod h1:tLjjuNXiQ4WLRBjU/ZUuyUweUO1s/sg7FtVX+yf1F0c=
-github.com/remko/go-mkvparse v0.8.0 h1:HM3ChwOhOW+rIoJgXHF8Fa7Wf240KbAgb2wZ0SoN1HM=
-github.com/remko/go-mkvparse v0.8.0/go.mod h1:tLjjuNXiQ4WLRBjU/ZUuyUweUO1s/sg7FtVX+yf1F0c=
 github.com/remko/go-mkvparse v0.9.0 h1:6fjAaY7omBaHgMW7wkEYlhD1jZUwDAeEHzGJbCBIAUI=
 github.com/remko/go-mkvparse v0.9.0/go.mod h1:tLjjuNXiQ4WLRBjU/ZUuyUweUO1s/sg7FtVX+yf1F0c=
 github.com/skelterjohn/go.wde v0.0.0-20190318181201-adc3f78cdb45/go.mod h1:zXxNsJHeUYIqpg890APBNEn9GoCbA4Cdnvuv3mx4fBk=
